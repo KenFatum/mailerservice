@@ -1,0 +1,24 @@
+{
+  "id": "template1",
+  "bodyTemplate": "Hallo ${username},\n\nVielen Dank für Ihre Anfrage. Wir haben Ihre Anfrage erhalten und werden uns bald bei Ihnen melden.\n\nMit freundlichen Grüßen,\nIhr Team",
+  "subjectTemplate": "Anfrage von ${username} empfangen",
+  "senderConfig": {
+    "from": "noreply@yourdomain.com",
+    "replyTo": "support@yourdomain.com"
+  },
+  "smtpServerConfig": {
+    "host": "smtp.yourdomain.com",
+    "port": 587,
+    "protocol": "SMTP",
+    "credentials": {
+      "username": "your-smtp-username",
+      "password": "your-smtp-password"
+    }
+  },
+  "recipientConfig": {
+    "to": [],
+    "cc": [],
+    "bcc": []
+  },
+  "authorities": ["ROLE_SYSTEM_USER"]
+}
