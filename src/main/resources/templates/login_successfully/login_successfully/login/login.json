@@ -1,0 +1,24 @@
+{
+  "id": "successful_login",
+  "body": "Sehr geehrter Nutzer,\n\nSie haben sich erfolgreich auf unserer Webseite angemeldet. Sollten Sie Fragen oder Anliegen haben, können Sie uns gerne kontaktieren.\n\nMit freundlichen Grüßen,\nIhr Webseiten-Team",
+  "subject": "Erfolgreicher Login auf Webseite",
+  "from": "noreply@webseite.de",
+  "replyTo": "support@webseite.de",
+  "senderConfig": {
+    "emailAddress": "noreply@webseite.de",
+    "replyToAddress": "support@webseite.de"
+  },
+  "smtpConfig": {
+    "hostname": "smtp.webseite.de",
+    "port": 587,
+    "protocol": "TLS",
+    "username": "username",
+    "password": "password"
+  },
+  "recipientConfig": {
+    "to": ["empfaenger@example.com"],
+    "cc": [],
+    "bcc": []
+  },
+  "authorities": ["ROLE_USER", "ROLE_ADMIN"]
+}

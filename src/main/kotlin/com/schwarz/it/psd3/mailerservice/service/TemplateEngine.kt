@@ -11,7 +11,7 @@ import java.io.StringWriter
 @Service
 class TemplateEngine(private val velocityEngine: VelocityEngine)
 {
-    fun generateContent(template: EmailTemplate, data: Map<String, Any>): String {
+    fun generateContent(template: String, data: Map<String, Any>): String {
 
 
 
@@ -19,7 +19,7 @@ class TemplateEngine(private val velocityEngine: VelocityEngine)
         data.forEach { key, value -> context.put(key, value) }
 
         val writer = StringWriter()
-        velocityEngine.evaluate(context, writer, "", template.body)
+        velocityEngine.evaluate(context, writer, "", template)
 
         return writer.toString()
     }

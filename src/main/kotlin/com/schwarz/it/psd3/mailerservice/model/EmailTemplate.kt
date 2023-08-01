@@ -10,4 +10,8 @@ data class EmailTemplate(
     val smtpConfig: SmtpConfig,
     val recipientConfig: RecipientConfig? = null,
     val authorities: List<String>
-) {}
+) {
+    fun getId(): String {
+        return id
+    }
+}

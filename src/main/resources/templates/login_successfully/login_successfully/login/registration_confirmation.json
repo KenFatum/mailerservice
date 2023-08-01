@@ -1,0 +1,23 @@
+{
+"id": "registrationTemplate",
+"body": "Sehr geehrter Nutzer, \n\nSie haben sich erfolgreich auf unserer Webseite registriert. Vielen Dank für Ihre Registrierung.\n\nMit freundlichen Grüßen,\nIhr Team",
+"subject": "Erfolgreiche Registrierung",
+"from": "noreply@webseite.de",
+"replyTo": "support@webseite.de",
+"senderConfig": {
+"username": "username",
+"password": "password"
+},
+"smtpConfig": {
+"host": "smtp.webseite.de",
+"port": 587,
+"protocol": "TLS"
+},
+"recipientConfig": {
+"to": [],
+"cc": [],
+"bcc": []
+},
+"authorities": ["ROLE_USER", "ROLE_ADMIN"]
+}
+
